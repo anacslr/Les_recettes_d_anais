@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "SourGummy";
+    font-weight: 300;
+}
+
+:root {
+    --maincolor: #FADADD;
+    --secondcolor: #E0EFE1;
+    --thirdcolor: #FEF3EF;
+}
+
+@font-face {
+    font-family: "borel";
+    src: url(./assets/fonts/Borel-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SourGummy";
+    src: url(./assets/fonts/SourGummy-VariableFont_wdth\,wght.ttf);
+}
+
+header nav {
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+header nav p {
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: .7rem;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header section {
+    background-image: url("./assets/images/table-4104652_1280.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+h1 {
+    font-family: "borel";
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+    padding: 40% 1% 10% 10%;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 1;
+        padding: 40% 1% 5% 10%;
+    }
+}
+
+main {
+    background-color: white;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        font-size: 1.8rem;
+    }
+}
+
+main section {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 992px) {
+        margin: 0 5%;
+    }
+}
+
+
+section article {
+    background-color: var(--secondcolor);
+    margin: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: .7rem;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        margin: 2%;
+        weight: 10rem;
+    }
+
+
+}
+
+article img {
+    height: 5rem;
+    border-radius: .7rem;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        height: 10rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        height: 13rem;
+    }
+}
+
+article h3 {
+    padding: 1rem;
+    font-size: medium;
+
+    @media screen and (min-width: 768px) {
+        max-width: 20ch;
+    }
+}
+
+footer {
+    background-color: var(--thirdcolor);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h4 {
+    padding: .5rem .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5rem;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+div {
+    margin: 0.3rem;
+}
+
+button {
+    background-color: var(--maincolor);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+}
